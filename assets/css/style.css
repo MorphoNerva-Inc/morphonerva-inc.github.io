@@ -145,18 +145,25 @@ header.site-header {
   display: block;
 }
 
-/* In dark theme, place the mark on a white rounded tile */
+/* Logo mark styling: transparent background in all themes */
 :root[data-theme="dark"] .logo-tile {
-  background: #ffffff;
-  padding: 2px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+}
+
+:root[data-theme="dark"] .brand-logo {
+  filter: brightness(0) invert(1);
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .logo-tile {
-    background: #ffffff;
-    padding: 2px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    background: transparent;
+    padding: 0;
+    box-shadow: none;
+  }
+  :root:not([data-theme="light"]) .brand-logo {
+    filter: brightness(0) invert(1);
   }
 }
 
