@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Technology | MorphoNerva, Inc.</title>
-  <meta name="description" content="High-level architecture of MorphoNerva's event-driven neuromorphic systems, from sensor encoding to digital silicon.">
+  <meta name="description" content="Event-driven neuromorphic technology: work scaling with activity, digital spiking networks, and full-stack co-design from models to silicon.">
   <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22 width=%2232%22 height=%2232%22><circle cx=%2216%22 cy=%2216%22 r=%22%232563eb%22/></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%200%2032%2032%22><circle cx=%2216%22 cy=%2216%22 r=%2212%22 fill=%22%232563eb%22/></svg>">
 </head>
 <body>
 
@@ -23,7 +23,7 @@
         <a href="index.html" class="active">Technology</a>
         <a href="../research/index.html">Research</a>
         <a href="../roadmap/index.html">Roadmap</a>
-        <a href="../collaborate/index.html">Careers & Collaborate</a>
+        <a href="../collaborate/index.html">Collaborate</a>
         <a href="../contact/index.html">Contact</a>
       </nav>
 
@@ -40,168 +40,139 @@
   <main>
     <div class="container">
       <div class="section-header">
-        <div class="hero-badges">
-          <span class="badge">Architecture</span>
-          <span class="badge neutral">Event-Driven Digital Systems</span>
-        </div>
-        <h2>High-Level Technology Architecture</h2>
-        <p>A full-stack, co-designed approach ensuring that what you simulate in software matches what hardware computes.</p>
+        <h1>Technology</h1>
+        <p>A full-stack, event-driven approach where computation scales with physical activity.</p>
       </div>
 
-      <!-- Platform Flow Diagram -->
-      <section class="platform-overview">
-        <div class="figure-container">
-          <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="../assets/images/platform-dark.svg">
-            <img src="../assets/images/platform-light.svg" alt="MorphoNerva platform flow: sensor data, spike encoding, spiking neural network model, OmniSim, OmniSDK, FPGA Prototype 0, future custom silicon">
-          </picture>
+      <!-- Why Event-Driven -->
+      <section style="margin-top: 2rem;">
+        <h2>Why event-driven</h2>
+        <p style="font-size: 1.05rem; margin-top: 0.75rem;">
+          Sensors are moving to the edge: onto machines, vehicles and robots, and into remote instruments. Many of them must listen or watch all the time, on a small power budget, far from a data centre. Event sensors already work this way: a conventional camera sends every pixel of every frame, while an event camera reports only the pixels that change.
+        </p>
+
+        <div style="margin: 2rem 0; text-align: center;">
+          <img src="../assets/photos/event-camera-comparison.jpg" alt="Conventional frames vs event camera output for running cheetah" style="max-width: 100%; border-radius: 10px; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);" width="960" height="480">
           <div class="figure-caption">
-            Figure 1: High-level platform flow. Physical sensor signals are converted to sparse discrete events, processed through an SNN model, validated in OmniSim, compiled via OmniSDK, and executed on FPGA/silicon accelerators.
+            Same scene, two sensors: conventional frames (top) and event-camera output (bottom). Image: TimoStoffregen, <a href="https://commons.wikimedia.org/wiki/File:Event_camera_comparison.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0 (resized).
           </div>
-        </div>
-
-        <p style="margin-top: 1.5rem; font-size: 1.05rem;">
-          Traditional computing architectures process sensory data synchronously: clock cycles advance constantly, registers toggle, and ALUs execute operations on dense tensors whether the monitored physical environment changed or remained completely silent. 
-        </p>
-        <p style="margin-top: 0.75rem; font-size: 1.05rem;">
-          MorphoNerva builds <strong>event-driven digital computing cores</strong> where computational activity is triggered strictly by events. When sensory signals are quiet, the digital circuitry remains in a low-power quiescent state; when significant physical changes occur, sparse packets propagate through the network.
-        </p>
-      </section>
-
-      <!-- Why Event-Driven Matters -->
-      <section style="margin-top: 3.5rem;">
-        <div class="section-header">
-          <h2>Why Event-Driven Processing Matters</h2>
-          <p>Energy and compute scale with signal activity rather than a rigid clock frequency.</p>
         </div>
 
         <div class="figure-container">
           <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="../assets/images/event-driven-dark.svg">
-            <img src="../assets/images/event-driven-light.svg" alt="Comparison: clocked processing operates constantly across quiet sensor signals; event-driven processing activates only when changes occur">
+            <source media="(prefers-color-scheme: dark)" srcset="../assets/event-driven-dark.svg">
+            <img src="../assets/event-driven-light.svg" alt="Diagram showing quiet sensor signal compared to constant clocked operations and sparse event-driven processing" width="960" height="400">
           </picture>
           <div class="figure-caption">
-            Figure 2: Clocked versus event-driven processing across typical edge sensor data streams.
+            Clocked processors work on every tick; event-driven processors work only when something changes.
           </div>
-        </div>
-
-        <div class="figure-container" style="margin-top: 2rem;">
-          <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="../assets/images/activity-scaling-dark.svg">
-            <img src="../assets/images/activity-scaling-light.svg" alt="Idealized scaling model: clocked work remains constant; event-driven work scales linearly with input activity fraction">
-          </picture>
-          <div class="figure-caption">
-            Figure 3: First-order activity scaling model (idealized): <code>Work = c₀ + a · c₁</code>.
-          </div>
-        </div>
-
-        <div class="callout">
-          <p>
-            <strong>The First-Order Activity Argument:</strong> If a fraction <em>a</em> of inputs changes per time step, clocked work is constant regardless of <em>a</em>, whereas event-driven work scales as <code>c₀ + a · c₁</code>. MorphoNerva's engineering objective is keeping fixed overhead <code>c₀</code> minimal while preserving real sparsity on real-world sensor streams without compromising accuracy.
-          </p>
         </div>
       </section>
 
-      <!-- Biological Foundations & Digital Neuron Model -->
+      <!-- Work That Scales With Activity -->
       <section style="margin-top: 3.5rem;">
-        <div class="section-header">
-          <h2>Biological Inspiration & Digital Spiking Neurons</h2>
-          <p>Borrowing the principle of threshold-triggered sparse communication from nature.</p>
-        </div>
+        <h2>Work that scales with activity</h2>
+        <p style="font-size: 1.05rem; margin-top: 0.75rem;">
+          In an event-driven system, energy and work scale with activity, not with the clock. If a fraction <em>a</em> of inputs changes per step, clocked work is constant, while event-driven work is roughly <em>c₀ + a&middot;c₁</em>. The engineering problem is keeping the fixed overhead <em>c₀</em> small, and the sparsity real on real data, without giving up accuracy.
+        </p>
 
-        <div class="grid grid-2" style="align-items: center; margin-bottom: 2rem;">
-          <div>
-            <p style="font-size: 1.05rem; line-height: 1.65;">
-              Biological nervous systems achieve extreme energy efficiency through sparse temporal communication. A biological neuron integrates synaptic inputs over time. Only when the accumulated membrane potential crosses a threshold does it emit a brief action potential (spike) to downstream neurons; between spikes, it consumes near-zero dynamic power.
-            </p>
-            <p style="font-size: 1.05rem; line-height: 1.65; margin-top: 1rem;">
-              Digital spiking neural networks capture this behavior using deterministic, reproducible arithmetic. In our hardware, each neuron integrates incoming events, applies decay dynamics, and fires discrete spike packets when threshold criteria are satisfied.
-            </p>
+        <div class="figure-container" style="margin-top: 1.5rem;">
+          <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="../assets/activity-scaling-dark.svg">
+            <img src="../assets/activity-scaling-light.svg" alt="First order model: constant clocked work versus activity-scaling event-driven work" width="960" height="400">
+          </picture>
+          <div class="figure-caption">
+            Idealized first-order model; not a measured result.
           </div>
+        </div>
+      </section>
+
+      <!-- Spiking Neural Networks in Two Minutes -->
+      <section style="margin-top: 3.5rem;">
+        <h2>Spiking neural networks in two minutes</h2>
+        <p style="font-size: 1.05rem; margin-top: 0.75rem;">
+          A biological neuron collects inputs from many others and fires a short pulse (a spike) only when enough arrive. Between spikes it does almost nothing. Spiking neural networks keep that behaviour in a simplified, digital form: each model neuron integrates its inputs over time and fires when it crosses a threshold. Across a network, only a small share of neurons is active at any moment.
+        </p>
+
+        <div class="grid grid-2" style="margin-top: 2rem; align-items: start;">
           <div style="text-align: center;">
-            <img src="../assets/images/neuron-blausen.jpg" alt="Biological multipolar neuron diagram" style="max-width: 85%; border-radius: 10px; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
-            <div style="font-size: 0.8rem; color: var(--text-subtle); margin-top: 0.5rem;">
-              Biological neuron structure (BruceBlaus / CC BY 3.0).
+            <img src="../assets/photos/cajal-purkinje-cell.jpg" alt="Drawing of Purkinje and granule cells by Santiago Ramón y Cajal, 1899" style="max-width: 90%; border-radius: 8px; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);" width="500" height="500">
+            <div class="figure-caption">
+              Purkinje (A) and granule (B) cells, drawn by Santiago Ramón y Cajal, 1899. Public domain.
+            </div>
+          </div>
+
+          <div style="text-align: center;">
+            <img src="../assets/photos/neuron-blausen.jpg" alt="Multipolar neuron anatomy diagram" style="max-width: 90%; border-radius: 8px; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);" width="500" height="500">
+            <div class="figure-caption">
+              A biological neuron. Inputs arrive on the dendrites; the output spike travels down the axon. Illustration: BruceBlaus, <a href="https://commons.wikimedia.org/wiki/File:Blausen_0657_MultipolarNeuron.png" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY 3.0 (resized).
             </div>
           </div>
         </div>
 
-        <div class="figure-container">
-          <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="../assets/images/spiking-neuron-dark.svg">
-            <img src="../assets/images/spiking-neuron-light.svg" alt="Leaky integrate-and-fire digital neuron membrane potential trajectory">
-          </picture>
-          <div class="figure-caption">
-            Figure 4: Textbook integrate-and-fire neuron dynamics: membrane potential accumulates input events, reaches threshold, emits a spike event, and resets.
-          </div>
-        </div>
-
         <div class="figure-container" style="margin-top: 2rem;">
           <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="../assets/images/sparse-raster-dark.svg">
-            <img src="../assets/images/sparse-raster-light.svg" alt="Synthetic spike raster plot showing population sparsity over time">
+            <source media="(prefers-color-scheme: dark)" srcset="../assets/spiking-neuron-dark.svg">
+            <img src="../assets/spiking-neuron-light.svg" alt="Integrate and fire neuron membrane potential trajectory" width="960" height="350">
           </picture>
           <div class="figure-caption">
-            Figure 5: Population activity sparsity. Across the network, only a fraction of neurons fire at any given instant.
+            Textbook illustrations from synthetic data, not measurements.
+          </div>
+        </div>
+
+        <div class="figure-container" style="margin-top: 1.5rem;">
+          <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="../assets/sparse-raster-dark.svg">
+            <img src="../assets/sparse-raster-light.svg" alt="Spike raster plot of sparse neural activity" width="960" height="350">
+          </picture>
+          <div class="figure-caption">
+            Textbook illustrations from synthetic data, not measurements.
           </div>
         </div>
       </section>
 
-      <!-- Application Domains -->
+      <!-- The Platform -->
       <section style="margin-top: 3.5rem;">
-        <div class="section-header">
-          <h2>Target Application Domains</h2>
-          <p>Where event-driven neuromorphic edge computing delivers distinct architectural value.</p>
+        <h2>The platform</h2>
+        <div class="figure-container">
+          <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="../assets/platform-dark.svg">
+            <img src="../assets/platform-light.svg" alt="Platform diagram: sensor data, spike encoding, spiking model, OmniSim, OmniSDK, FPGA prototype, custom silicon" width="960" height="420">
+          </picture>
+          <div class="figure-caption">
+            Platform architecture: sensor data &rarr; spike encoding &rarr; spiking model &rarr; OmniSim &rarr; OmniSDK &rarr; FPGA prototype &rarr; custom silicon.
+          </div>
         </div>
 
-        <div class="table-responsive">
-          <table>
-            <thead>
-              <tr>
-                <th>Domain</th>
-                <th>Challenge with Clocked Systems</th>
-                <th>MorphoNerva Event-Driven Approach</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Industrial Machine Health</strong></td>
-                <td>Continuous high-rate acoustic and vibrational sensor sampling drains batteries or requires tethered power.</td>
-                <td>Near-zero power listening during normal mechanical operation; instant spike burst upon anomaly or wear pattern onset.</td>
-              </tr>
-              <tr>
-                <td><strong>Edge Audio Sensing</strong></td>
-                <td>Constant digital signal processing across quiet ambient acoustic environments.</td>
-                <td>Sub-milliwatt continuous event detection, activating downstream analysis only upon acoustic trigger events.</td>
-              </tr>
-              <tr>
-                <td><strong>Event Cameras & Robotics</strong></td>
-                <td>High frame rates (1000+ fps) overwhelm memory bandwidth and create excessive latency in mobile robots.</td>
-                <td>Sub-millisecond latency processing event-by-event directly from dynamic vision sensors with minimal memory buffer footprint.</td>
-              </tr>
-              <tr>
-                <td><strong>Scientific & Harsh Instruments</strong></td>
-                <td>Remote instruments (environmental, seismic, aerospace) operate under strict thermal and battery constraints.</td>
-                <td>Always-on intelligent event detection and temporal classification at the sensor edge before transmitting telemetry.</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="callout" style="margin-top: 1.5rem;">
+          <p>
+            We co-design models and circuits with one goal: <strong>the model we train is the model the hardware computes</strong>, with no hand-off step where accuracy silently changes.
+          </p>
         </div>
       </section>
 
-      <!-- Model = Hardware Contract -->
+      <!-- How We Check Our Work -->
       <section style="margin-top: 3.5rem;">
-        <div class="section-header">
-          <h2>The "Model = Hardware" Contract</h2>
-          <p>Eliminating silent numerical divergence between software training and silicon execution.</p>
+        <h2>How we check our work</h2>
+        <div class="figure-container">
+          <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="../assets/verification-flow-dark.svg">
+            <img src="../assets/verification-flow-light.svg" alt="Verification flow diagram: reference model, hardware design, independent simulation, gate check, formal proofs, FPGA build, board measurement" width="960" height="420">
+          </picture>
+          <div class="figure-caption">
+            Before anything counts, it is checked against a reference model at every step, from the first model to the board.
+          </div>
         </div>
+      </section>
 
-        <p style="font-size: 1.05rem;">
-          A major bottleneck in deployed neural acceleration is quantization and compilation mismatch: models trained in floating-point frameworks degrade or behave unpredictably when converted to integer hardware.
-        </p>
-        <p style="font-size: 1.05rem; margin-top: 0.75rem;">
-          MorphoNerva resolves this at the architectural root: <strong>OmniSim and OmniSDK share an identical numerical contract with our digital RTL core</strong>. The model trained and verified in software is mathematically identical to the model executed on the digital accelerator.
-        </p>
+      <!-- What We Don't Publish -->
+      <section style="margin-top: 3.5rem;">
+        <div class="card" style="background-color: var(--bg-card-subtle);">
+          <h3>What we don't publish</h3>
+          <p style="margin-top: 0.5rem;">
+            We describe our technology at block level. Implementation details stay private while the technology is under development.
+          </p>
+        </div>
       </section>
 
     </div>
@@ -213,10 +184,10 @@
       <div class="footer-col">
         <h4>MorphoNerva, Inc.</h4>
         <p>
-          Event-driven neuromorphic computing systems for edge intelligence, remote sensing, and scientific instruments.
+          Event-driven neuromorphic computing systems for edge and scientific workloads.
         </p>
         <p style="margin-top: 0.75rem; font-size: 0.82rem; color: var(--text-subtle);">
-          Registered US Small Business (SAM.gov).
+          Registered US small business (SAM.gov).
         </p>
       </div>
 
@@ -227,17 +198,16 @@
           <li><a href="index.html">Technology</a></li>
           <li><a href="../research/index.html">Research</a></li>
           <li><a href="../roadmap/index.html">Roadmap</a></li>
-          <li><a href="../collaborate/index.html">Careers & Collaborate</a></li>
+          <li><a href="../collaborate/index.html">Collaborate</a></li>
           <li><a href="../contact/index.html">Contact</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h4>Open Ecosystem</h4>
+        <h4>Ecosystem</h4>
         <ul>
           <li><a href="https://github.com/MorphoNerva-Inc" target="_blank" rel="noopener">GitHub Organization</a></li>
-          <li><a href="https://github.com/MorphoNerva-Inc/.github" target="_blank" rel="noopener">Organization Profile</a></li>
-          <li><a href="https://github.com/neuromorphs/NIR" target="_blank" rel="noopener">NIR Standard</a></li>
+          <li><a href="https://github.com/neuromorphs/NIR" target="_blank" rel="noopener">NIR Model Format</a></li>
           <li><a href="https://open-neuromorphic.org" target="_blank" rel="noopener">Open Neuromorphic</a></li>
         </ul>
       </div>
@@ -245,9 +215,9 @@
       <div class="footer-col">
         <h4>Standards</h4>
         <ul>
-          <li><a href="https://github.com/MorphoNerva-Inc/morphonerva-inc.github.io/blob/main/SOURCES.md">Image Sources</a></li>
+          <li><a href="../SOURCES.md">Image credits</a></li>
           <li><a href="https://github.com/MorphoNerva-Inc/.github/blob/main/CODE_OF_CONDUCT.md" target="_blank" rel="noopener">Code of Conduct</a></li>
-          <li><a href="https://github.com/MorphoNerva-Inc/.github/blob/main/SECURITY.md" target="_blank" rel="noopener">Security Policy</a></li>
+          <li><a href="https://github.com/MorphoNerva-Inc/.github/blob/main/SECURITY.md" target="_blank" rel="noopener">Security</a></li>
           <li><a href="../collaborate/index.html">Collaboration Form</a></li>
         </ul>
       </div>
@@ -255,10 +225,7 @@
 
     <div class="footer-bottom">
       <div>
-        &copy; 2026 MorphoNerva, Inc. All rights reserved.
-      </div>
-      <div>
-        Evidence Policy: Measured or Sourced numbers only.
+        &copy; 2026 MorphoNerva, Inc. Figures are diagrams or illustrations based on textbook models and synthetic data, not measured results. Photographs are used under their licences; see <a href="../SOURCES.md">Image credits</a>.
       </div>
     </div>
   </footer>

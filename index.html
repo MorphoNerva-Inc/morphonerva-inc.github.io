@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MorphoNerva, Inc. | Neuromorphic Computing for the Edge</title>
-  <meta name="description" content="MorphoNerva builds event-driven neuromorphic computing systems for edge and scientific workloads. Computing only when something changes.">
+  <meta name="description" content="Event-driven hardware and software that work only when something changes. Neuromorphic computing for edge and scientific workloads.">
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22 width=%2232%22 height=%2232%22><circle cx=%2216%22 cy=%2216%22 r=%2212%22 fill=%22%232563eb%22/></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%200%2032%2032%22><circle cx=%2216%22 cy=%2216%22 r=%2212%22 fill=%22%232563eb%22/></svg>">
 </head>
 <body>
 
@@ -23,7 +23,7 @@
         <a href="technology/index.html">Technology</a>
         <a href="research/index.html">Research</a>
         <a href="roadmap/index.html">Roadmap</a>
-        <a href="collaborate/index.html">Careers & Collaborate</a>
+        <a href="collaborate/index.html">Collaborate</a>
         <a href="contact/index.html">Contact</a>
       </nav>
 
@@ -37,9 +37,13 @@
     </div>
   </header>
 
-  <!-- Hero Section with Real Representative Imagery Banner -->
+  <!-- Hero Section -->
   <section class="hero">
-    <img src="assets/images/hero-banner-real.jpg" alt="MorphoNerva banner featuring real neuromorphic hardware (DARPA SyNAPSE 16-chip board), event-camera output, cortical neurons in vivo, and Mars remote sensing" class="hero-banner-img">
+    <img src="assets/hero.jpg" alt="Collage of public-domain photos: DARPA SyNAPSE board, Santiago Ramón y Cajal neuron drawing, NASA Hubble spectrograph, and U.S. Coast Guard buoy servicing" class="hero-banner-img" width="1600" height="500">
+    <div class="figure-caption" style="text-align: center; padding: 0.5rem 1rem; border-bottom: 1px solid var(--border-color); background: var(--bg-card-subtle);">
+      Banner: public-domain images from DARPA, Santiago Ramón y Cajal (1899), NASA and the U.S. Coast Guard. None show MorphoNerva hardware.
+    </div>
+
     <div class="hero-content">
       <div class="hero-badges">
         <span class="badge">R&D Stage</span>
@@ -47,53 +51,45 @@
         <span class="badge neutral">HW/SW Co-Design</span>
         <span class="badge neutral">SAM.gov Registered</span>
       </div>
-      <h1>Event-driven computing for the edge and scientific sensing.</h1>
+      <h1>Neuromorphic computing for the edge</h1>
       <p class="lead">
-        Most sensor data is quiet most of the time. Conventional clocked processors do the same work on every clock tick anyway. MorphoNerva designs full-stack digital neuromorphic systems that spend energy only when the physical world changes.
+        Event-driven hardware and software that work only when something changes.
       </p>
       <div class="hero-actions">
-        <a href="technology/index.html" class="btn btn-primary">Explore Technology</a>
-        <a href="collaborate/index.html" class="btn btn-secondary">Partner With Us</a>
-        <a href="roadmap/index.html" class="btn btn-secondary">Our Roadmap</a>
+        <a href="technology/index.html" class="btn btn-primary">See the technology</a>
+        <a href="collaborate/index.html" class="btn btn-secondary">Work with us</a>
       </div>
     </div>
   </section>
 
-  <!-- Main Content -->
   <main>
     <div class="container">
 
-      <!-- Mission Statement -->
-      <section class="mission">
-        <div class="section-header">
-          <h2>Our Mission</h2>
-          <p>Making always-on intelligence practical where power, heat, and latency are the fundamental limits.</p>
-        </div>
+      <!-- Intro Paragraph & Pull Quote -->
+      <section class="intro-section">
+        <p style="font-size: 1.15rem; line-height: 1.7; max-width: 900px; margin-bottom: 1.5rem;">
+          MorphoNerva, Inc. is an early-stage engineering R&D company building neuromorphic, event-driven computing systems for edge and scientific workloads. We design the full stack together: spiking neural network models, the software that builds and verifies them, and the digital hardware they run on. We start with FPGA prototypes and are working toward custom silicon.
+        </p>
 
         <div class="callout">
-          <p>
-            <strong>Put computation directly next to the sensor.</strong> By co-designing spiking neural network models, simulation toolchains, and digital event-driven cores, we ensure that what is simulated in software matches what the hardware computes — with zero unexpected accuracy divergence.
+          <p style="font-size: 1.15rem; font-style: italic;">
+            &ldquo;Most sensor data is quiet most of the time. Conventional processors do the same work on every clock tick anyway. Our systems are designed to do work only when something changes.&rdquo;
           </p>
         </div>
       </section>
 
-      <!-- What We Build -->
-      <section class="what-we-build" style="margin-top: 3.5rem;">
-        <div class="section-header">
-          <h2>What We Build</h2>
-          <p>A unified, vertically co-designed neuromorphic platform from models to silicon.</p>
-        </div>
-
+      <!-- Three Pillars Cards -->
+      <section style="margin-top: 3.5rem;">
         <div class="grid grid-3">
           <div class="card">
             <span class="badge" style="width: fit-content; margin-bottom: 0.75rem;">Hardware</span>
-            <h3>Neuromorphic Accelerator</h3>
+            <h3>Neuromorphic edge accelerator</h3>
             <p>
-              A digital, event-driven neural processing architecture designed for always-on edge sensing. Prototyped on FPGA first (Prototype 0 in active development), with custom silicon as the long-term target.
+              A digital, event-driven neural processing core for always-on sensing. FPGA prototypes first, then custom silicon. In development.
             </p>
             <div class="card-footer">
-              <span>Audience: Product & Edge Teams</span>
-              <span>Status: In Development</span>
+              <a href="technology/index.html">Learn more &rarr;</a>
+              <span>In development</span>
             </div>
           </div>
 
@@ -101,11 +97,11 @@
             <span class="badge neutral" style="width: fit-content; margin-bottom: 0.75rem;">Simulation</span>
             <h3>OmniSim</h3>
             <p>
-              Simulation and numerical analysis environment for spiking neural networks. Built from first principles so that model behavior in simulation strictly matches hardware digital execution.
+              Simulation and analysis for spiking models, built so that what you simulate is what the hardware computes. In development.
             </p>
             <div class="card-footer">
-              <span>Audience: Model Developers</span>
-              <span>Status: In Development</span>
+              <a href="technology/index.html">Learn more &rarr;</a>
+              <span>In development</span>
             </div>
           </div>
 
@@ -113,116 +109,65 @@
             <span class="badge neutral" style="width: fit-content; margin-bottom: 0.75rem;">Toolchain</span>
             <h3>OmniSDK</h3>
             <p>
-              Developer compiler and deployment toolkit to import, build, and deploy spiking models to MorphoNerva hardware, supporting open standards including the Neuromorphic Intermediate Representation (NIR).
+              Import, build and deploy spiking models, starting from the open NIR model format. In development.
             </p>
             <div class="card-footer">
-              <span>Audience: Embedded Engineers</span>
-              <span>Status: In Development</span>
+              <a href="technology/index.html">Learn more &rarr;</a>
+              <span>In development</span>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Real Representative Imagery Showcase -->
-      <section class="imagery-showcase" style="margin-top: 4rem;">
+      <!-- Where It Applies Photo Row -->
+      <section style="margin-top: 4rem;">
         <div class="section-header">
-          <h2>Representative Technology & Domain Imagery</h2>
-          <p>Grounding neuromorphic systems in physical hardware, biological foundations, event sensors, and harsh field environments.</p>
+          <h2>Where it applies</h2>
+          <p>Industrial monitoring &middot; Audio sensing &middot; Event cameras and robotics &middot; Scientific and harsh-environment sensing.</p>
         </div>
 
         <div class="image-gallery">
           <div class="gallery-item">
-            <img src="assets/images/darpa-synapse-board.jpg" alt="DARPA SyNAPSE 16-Chip Neuromorphic Computing Board">
+            <img src="assets/photos/wind-farm-power-county.jpg" alt="Aerial view of wind farm in Power County, Idaho" loading="lazy" width="800" height="600">
             <div class="gallery-caption">
-              <strong>Neuromorphic Silicon Heritage</strong>
-              A 16-chip brain-inspired computing board from DARPA's SyNAPSE programme (2014). Demonstrating multi-core neuromorphic integration.
-              <span class="source-tag">Source: DARPA / Public Domain</span>
+              <strong>Industrial Monitoring</strong>
+              Continuous remote monitoring of critical infrastructure and turbines on minimal battery power.
+              <span class="source-tag">U.S. Dept of Energy &middot; Public domain</span>
             </div>
           </div>
 
           <div class="gallery-item">
-            <img src="assets/images/event-camera-comparison.jpg" alt="Conventional video frames versus event-camera sparse stream">
+            <img src="assets/photos/noaa-buoy-service.jpg" alt="U.S. Coast Guard servicing a NOAA weather buoy at sea" loading="lazy" width="800" height="600">
             <div class="gallery-caption">
-              <strong>Event-Based Vision vs Clocked Video</strong>
-              Same motion scene: conventional video sends every pixel on every frame (top); event cameras stream only pixel luminance changes asynchronously (bottom).
-              <span class="source-tag">Source: T. Stoffregen / CC BY-SA 4.0</span>
+              <strong>Remote Oceanic Sensing</strong>
+              Autonomous marine weather and acoustic instruments far from power or bandwidth.
+              <span class="source-tag">U.S. Coast Guard &middot; Public domain</span>
             </div>
           </div>
 
           <div class="gallery-item">
-            <img src="assets/images/spinnaker-machine.jpg" alt="SpiNNaker 1-million-core neuromorphic computing machine">
+            <img src="assets/photos/nasa-hubble-spectrograph.jpg" alt="NASA technicians assembling the Cosmic Origins Spectrograph" loading="lazy" width="800" height="600">
             <div class="gallery-caption">
-              <strong>Large-Scale Neuromorphic Architectures</strong>
-              The SpiNNaker 1-million-core neuromorphic machine, demonstrating packet-switched digital spike routing at scale.
-              <span class="source-tag">Source: Pabogdan / CC BY-SA 4.0</span>
-            </div>
-          </div>
-
-          <div class="gallery-item">
-            <img src="assets/images/prophesee-event-camera-kit.jpg" alt="Prophesee Event-based evaluation kit">
-            <div class="gallery-caption">
-              <strong>Neuromorphic Edge Sensors</strong>
-              Commercial dynamic vision evaluation kit providing microsecond temporal resolution for low-latency robotics and edge perception.
-              <span class="source-tag">Source: Auledas / CC BY 4.0</span>
-            </div>
-          </div>
-
-          <div class="gallery-item">
-            <img src="assets/images/cortical-neuron-microscopy.jpg" alt="In vivo two-photon imaging of cortical dendritic arbor">
-            <div class="gallery-caption">
-              <strong>Cortical Dendritic Dynamics</strong>
-              Two-photon imaging of dendritic arbors and synaptic dynamics in living cortex, informing biological integrate-and-fire digital models.
-              <span class="source-tag">Source: PLoS Biology / CC BY 2.5</span>
-            </div>
-          </div>
-
-          <div class="gallery-item">
-            <img src="assets/images/wind-farm-power-county.jpg" alt="Aerial view of wind farm infrastructure">
-            <div class="gallery-caption">
-              <strong>Remote Asset Condition Monitoring</strong>
-              Wind turbines and critical infrastructure requiring continuous acoustic and vibrational anomaly detection on minimal power.
-              <span class="source-tag">Source: U.S. Dept of Energy / Public Domain</span>
-            </div>
-          </div>
-
-          <div class="gallery-item">
-            <img src="assets/images/mars-curiosity-remote-sensing.jpg" alt="Mars Curiosity rover remote sensing mast and arm in the field">
-            <div class="gallery-caption">
-              <strong>Autonomous Remote Instrumentation</strong>
-              Remote sensing instruments in extreme, bandwidth-constrained environments where edge intelligence is mandatory.
-              <span class="source-tag">Source: NASA/JPL-Caltech / Public Domain</span>
-            </div>
-          </div>
-
-          <div class="gallery-item">
-            <img src="assets/images/nist-frequency-comb.jpg" alt="NIST optical frequency comb precision laser instrument">
-            <div class="gallery-caption">
-              <strong>Scientific Sensing & Measurement</strong>
-              Precision optical measurement instrumentation where event-driven digital signal processing enables low-latency analysis.
-              <span class="source-tag">Source: NIST / Public Domain</span>
+              <strong>Scientific Instrumentation</strong>
+              Precision instruments in harsh thermal and physical constraints requiring low-latency edge event detection.
+              <span class="source-tag">NASA &middot; Public domain</span>
             </div>
           </div>
         </div>
 
-        <p style="font-size: 0.85rem; color: var(--text-subtle); text-align: center; margin-top: 0.5rem;">
-          All photographs and third-party figures are verified open-source or public domain works used under licence. Complete attribution and source links are available in our <a href="https://github.com/MorphoNerva-Inc/morphonerva-inc.github.io/blob/main/SOURCES.md">Image Sources Register</a>.
+        <p class="figure-caption" style="text-align: center;">
+          Remote and harsh environments: wind turbines (U.S. Dept of Energy), ocean weather buoys (U.S. Coast Guard), space instruments (NASA). Public domain.
         </p>
       </section>
 
-      <!-- Evidence Ladder & Publication Policy Notice -->
-      <section class="policy-notice" style="margin-top: 4rem;">
-        <div class="card" style="background-color: var(--bg-card-subtle);">
-          <h3>Our Commitment to Verifiable Science</h3>
-          <p>
-            Neuromorphic computing has sometimes suffered from exaggerated claims. MorphoNerva operates under a strict evidence-label policy:
-          </p>
-          <ul style="margin-left: 1.5rem; margin-bottom: 1rem; color: var(--text-muted); font-size: 0.95rem;">
-            <li>We publish only <strong>Measured</strong> or <strong>Sourced</strong> figures.</li>
-            <li>No performance numbers are published until verified on our physical hardware.</li>
-            <li>Every published result specifies the exact hardware platform, workload, power boundary, and reproduction commit.</li>
-          </ul>
+      <!-- Status Strip -->
+      <section style="margin-top: 3.5rem;">
+        <div class="card" style="background-color: var(--bg-card-subtle); display: flex; flex-direction: row; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
           <div>
-            <a href="roadmap/index.html" class="btn btn-secondary" style="font-size: 0.88rem; padding: 0.45rem 1rem;">Read Our Evidence Ladder & Standards &rarr;</a>
+            <strong>Current Status:</strong> Now: Prototype 0, the first digital core, designed and checked in simulation. No performance results are published yet. When they are, they'll be measured on our own hardware and labelled.
+          </div>
+          <div>
+            <a href="roadmap/index.html" class="btn btn-secondary" style="font-size: 0.9rem; padding: 0.5rem 1rem;">View Roadmap &rarr;</a>
           </div>
         </div>
       </section>
@@ -236,10 +181,10 @@
       <div class="footer-col">
         <h4>MorphoNerva, Inc.</h4>
         <p>
-          Event-driven neuromorphic computing systems for edge intelligence, remote sensing, and scientific instruments.
+          Event-driven neuromorphic computing systems for edge and scientific workloads.
         </p>
         <p style="margin-top: 0.75rem; font-size: 0.82rem; color: var(--text-subtle);">
-          Registered US Small Business (SAM.gov).
+          Registered US small business (SAM.gov).
         </p>
       </div>
 
@@ -250,17 +195,16 @@
           <li><a href="technology/index.html">Technology</a></li>
           <li><a href="research/index.html">Research</a></li>
           <li><a href="roadmap/index.html">Roadmap</a></li>
-          <li><a href="collaborate/index.html">Careers & Collaborate</a></li>
+          <li><a href="collaborate/index.html">Collaborate</a></li>
           <li><a href="contact/index.html">Contact</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h4>Open Ecosystem</h4>
+        <h4>Ecosystem</h4>
         <ul>
           <li><a href="https://github.com/MorphoNerva-Inc" target="_blank" rel="noopener">GitHub Organization</a></li>
-          <li><a href="https://github.com/MorphoNerva-Inc/.github" target="_blank" rel="noopener">Organization Profile</a></li>
-          <li><a href="https://github.com/neuromorphs/NIR" target="_blank" rel="noopener">NIR Standard</a></li>
+          <li><a href="https://github.com/neuromorphs/NIR" target="_blank" rel="noopener">NIR Model Format</a></li>
           <li><a href="https://open-neuromorphic.org" target="_blank" rel="noopener">Open Neuromorphic</a></li>
         </ul>
       </div>
@@ -268,9 +212,9 @@
       <div class="footer-col">
         <h4>Standards</h4>
         <ul>
-          <li><a href="https://github.com/MorphoNerva-Inc/morphonerva-inc.github.io/blob/main/SOURCES.md">Image Sources</a></li>
+          <li><a href="SOURCES.md">Image credits</a></li>
           <li><a href="https://github.com/MorphoNerva-Inc/.github/blob/main/CODE_OF_CONDUCT.md" target="_blank" rel="noopener">Code of Conduct</a></li>
-          <li><a href="https://github.com/MorphoNerva-Inc/.github/blob/main/SECURITY.md" target="_blank" rel="noopener">Security Policy</a></li>
+          <li><a href="https://github.com/MorphoNerva-Inc/.github/blob/main/SECURITY.md" target="_blank" rel="noopener">Security</a></li>
           <li><a href="collaborate/index.html">Collaboration Form</a></li>
         </ul>
       </div>
@@ -278,10 +222,7 @@
 
     <div class="footer-bottom">
       <div>
-        &copy; 2026 MorphoNerva, Inc. All rights reserved.
-      </div>
-      <div>
-        Evidence Policy: Measured or Sourced numbers only.
+        &copy; 2026 MorphoNerva, Inc. Figures are diagrams or illustrations based on textbook models and synthetic data, not measured results. Photographs are used under their licences; see <a href="SOURCES.md">Image credits</a>.
       </div>
     </div>
   </footer>

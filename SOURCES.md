@@ -1,22 +1,27 @@
-# Image Sources and Provenance Register
+# Image sources and licences
 
-Every third-party photograph, scientific diagram, and illustration used on `morphonerva-inc.github.io` is catalogued here. All external images are used unmodified except for proportional downsampling and JPEG web compression. A resized copy retains the original licence.
+Every image on the organization profile is listed here. Third-party images are used unmodified except for
+resizing and JPEG re-compression for the web. A resized copy keeps the original licence.
 
-## Third-Party Photographic & Scientific Imagery
+## Third-party images
 
-| File | Description & Domain | Author / Credit | Licence | Source | Retrieved |
+| File | What it shows | Author | Licence | Source | Retrieved |
 |---|---|---|---|---|---|
-| `assets/images/darpa-synapse-board.jpg` | 16-chip brain-inspired computing board from DARPA's SyNAPSE programme (2014). Neuromorphic hardware heritage. Not MorphoNerva hardware. | Defense Advanced Research Projects Agency (DARPA) | Public domain (U.S. Government work) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:DARPA_SyNAPSE_16_Chip_Board.jpg) | 2026-11-20 |
-| `assets/images/spinnaker-machine.jpg` | SpiNNaker 1-million-core digital neuromorphic supercomputer. Large-scale packet-switched spike routing demonstration. | Pabogdan | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Spinn_1m_pano_(cropped).jpg) | 2026-11-22 |
-| `assets/images/event-camera-comparison.jpg` | Conventional video frames vs. event-camera asynchronous event stream of a running cheetah. Demonstrating dynamic vision sparsity. | TimoStoffregen | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Event_camera_comparison.jpg) | 2026-11-20 |
-| `assets/images/prophesee-event-camera-kit.jpg` | Prophesee event-based vision sensor evaluation kit. Microsecond-level temporal resolution edge sensing. | Auledas | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Prophesee_Event_Camera_Evaluation_Kit.jpg) | 2026-11-22 |
-| `assets/images/neuron-blausen.jpg` | Anatomical diagram of a biological multipolar neuron (dendrites, soma, axon, synapses). Biological foundation for leaky integrate-and-fire models. | BruceBlaus | [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Blausen_0657_MultipolarNeuron.png) | 2026-11-20 |
-| `assets/images/cortical-neuron-microscopy.jpg` | In vivo two-photon imaging of cortical dendritic arbor and dendritic spine dynamics in living cortex. | Wei-Chung Allen Lee, Hayden Huang, Guoping Feng, Joshua R. Sanes, Emery N. Brown, Peter T. So, Elly Nedivi (PLoS Biology) | [CC BY 2.5](https://creativecommons.org/licenses/by/2.5/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:PLoSBiol4.e126.Fig6fNeuron.jpg) | 2026-11-22 |
-| `assets/images/wind-farm-power-county.jpg` | Aerial photograph of Power County Wind Farm, Idaho. Representing remote, always-on edge condition monitoring. | U.S. Department of Energy | Public domain (U.S. Government work) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Power_County_Wind_Farm_002.jpg) | 2026-11-20 |
-| `assets/images/mars-curiosity-remote-sensing.jpg` | Remote sensing mast and robotic arm of NASA's Mars Curiosity rover operating in extreme remote environment. | NASA / JPL-Caltech | Public domain (U.S. Government work) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Arm_and_Mast_of_NASA_Mars_Rover_Curiosity_533976main_pia13981-43_full.jpg) | 2026-11-22 |
-| `assets/images/nist-frequency-comb.jpg` | Precision optical frequency comb laser measurement instrument. Representing scientific sensing instrumentation. | National Institute of Standards and Technology (NIST) | Public domain (U.S. Government work) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Optical_Comb_(5881387615).jpg) | 2026-11-22 |
-| `assets/images/hero-banner-real.jpg` | Composite banner composed of verified public-domain and CC-licensed real imagery (DARPA SyNAPSE board, event camera output, cortical neuron microscopy, and Mars remote sensing) with typography and dark overlay. | MorphoNerva, Inc. (derived from sources above) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | MorphoNerva | 2026-11-22 |
+| `photos/neuron-blausen.jpg` | Labelled illustration of a multipolar neuron | BruceBlaus | [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Blausen_0657_MultipolarNeuron.png) | 2026-11-20 |
+| `photos/event-camera-comparison.jpg` | Conventional frames vs. event-camera output for the same scene | TimoStoffregen | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) (this resized copy is shared under the same licence) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Event_camera_comparison.jpg) | 2026-11-20 |
+| `photos/wind-farm-power-county.jpg` | Aerial view of the Power County wind farm, Idaho | U.S. Department of Energy | Public domain (U.S. government work) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Power_County_Wind_Farm_002.jpg) | 2026-11-20 |
+| `photos/darpa-synapse-board.jpg` | 16-chip brain-inspired computing board from DARPA's SyNAPSE programme (2014). Not MorphoNerva hardware | DARPA | Public domain (U.S. government work) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:DARPA_SyNAPSE_16_Chip_Board.jpg) | 2026-11-20 |
+| `photos/cajal-purkinje-cell.jpg` | Ink drawing of Purkinje and granule cells from the pigeon cerebellum (1899) | Santiago Ramón y Cajal | Public domain (author died 1934) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:PurkinjeCell.jpg) | 2026-11-22 |
+| `photos/noaa-buoy-service.jpg` | U.S. Coast Guard cutter crew servicing NOAA ocean-monitoring buoys, Pacific Ocean, 2010 | U.S. Coast Guard | Public domain (U.S. government work) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:USCGC_Maple_servicing_NOAA_buoy.jpg) | 2026-11-22 |
+| `photos/nasa-hubble-spectrograph.jpg` | Building the Space Telescope Imaging Spectrograph for the Hubble Space Telescope (1996) | NASA | Public domain (U.S. government work) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Building_the_Space_Telescope_Imaging_Spectrograph_of_Hubble_Space_Telescope_1996_18_lg_web.jpg) | 2026-11-22 |
 
-## MorphoNerva Architectural SVG Diagrams
+## MorphoNerva figures
 
-The vector diagrams (`platform-*.svg`, `event-driven-*.svg`, `activity-scaling-*.svg`, `spiking-neuron-*.svg`, `sparse-raster-*.svg`, `roadmap-*.svg`, `evidence-ladder-*.svg`, `verification-flow-*.svg`) are MorphoNerva's proprietary engineering diagrams and educational illustrations. They depict high-level block flows, textbook models, and synthetic data curves. They represent architectural concepts and standards, **not physical hardware measurements**.
+All other files in this folder are MorphoNerva's own work. They are diagrams or illustrations based on
+textbook models and synthetic data, **not measured results**.
+
+| File(s) | Kind | Generated by |
+|---|---|---|
+| `hero.jpg` | Banner collage of four public-domain photos listed above (`darpa-synapse-board`, `cajal-purkinje-cell`, `nasa-hubble-spectrograph`, `noaa-buoy-service`) with a dark overlay and the wordmark | Composed with Pillow from the listed sources |
+| `evidence-ladder-*.svg`, `verification-flow-*.svg`, `roadmap-*.svg` | Diagrams | `tools/make_figures.py` |
+| `event-driven-*.svg`, `activity-scaling-*.svg`, `spiking-neuron-*.svg`, `sparse-raster-*.svg`, `platform-*.svg` | Illustrations from textbook models and synthetic data | Original 2026-11 profile figures |
