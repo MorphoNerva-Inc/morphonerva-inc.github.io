@@ -12,7 +12,6 @@ We use photographs and figures from other people and organizations under their l
 | `assets/images/cajal-purkinje-cell.jpg` | Purkinje cells (A) and granule cells (B) from the cerebellum, drawn in 1899 | Santiago Ramón y Cajal | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:PurkinjeCell.jpg) |
 | `assets/images/neuron-blausen.jpg` | Labelled illustration of a neuron | BruceBlaus | [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Blausen_0657_MultipolarNeuron.png) |
 | `assets/images/event-camera-comparison.jpg` | The same scene seen by a conventional camera (frames) and an event camera (events) | TimoStoffregen | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Event_camera_comparison.jpg) |
-| `assets/images/prophesee-event-camera-kit.jpg` | An event camera evaluation kit | Auledas | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Prophesee_Event_Camera_Evaluation_Kit.jpg) |
 | `assets/images/moores-law-owid.jpg` | Transistor counts of microprocessors, 1970–2020 | Max Roser and Hannah Ritchie, Our World in Data | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Moore%27s_Law_Transistor_Count_1970-2020.png) |
 | `assets/images/silicon-wafer-12in.jpg` | A 300 mm (12-inch) silicon wafer | Peellden | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:12-inch_silicon_wafer.jpg) |
 | `assets/images/nasa-engineers-lab.jpg` | Engineers preparing hardware for vacuum testing at NASA Goddard | NASA | Public domain (U.S. government work) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:NASA_Tests_LISA_Development_Units_(SVS14955_-_LISA_TVAC-9).jpg) |
@@ -27,7 +26,6 @@ We use photographs and figures from other people and organizations under their l
 | Image | Made from | Licence of the combined image |
 |---|---|---|
 | `assets/images/hero-clean.jpg` | DARPA SyNAPSE board, cortical neuron (CC BY 2.5, credited above), Hubble spectrograph and NOAA buoy photos, side by side | Public domain and CC BY 2.5 parts; credit as above |
-| `assets/images/hero-banner-real.jpg` | DARPA SyNAPSE board, event-camera comparison, cortical neuron and Mars rover photos, with text | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), because it includes a CC BY-SA image |
 
 ## Our own figures and logo
 

@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Roadmap & Evidence Standards | MorphoNerva, Inc.</title>
-  <meta name="description" content="Development roadmap and evidence ladder for MorphoNerva neuromorphic hardware and software systems.">
+  <title>Roadmap | MorphoNerva, Inc.</title>
+  <meta name="description" content="MorphoNerva engineering milestones: from research and digital core simulation to FPGA prototypes and custom silicon.">
   <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22 width=%2232%22 height=%2232%22><circle cx=%2216%22 cy=%2216%22 r=%22%232563eb%22/></svg>">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32.png">
+  <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
 </head>
 <body>
 
@@ -14,8 +16,10 @@
   <header class="site-header">
     <div class="nav-container">
       <a href="../index.html" class="brand-link">
-        <span class="brand-pulse" aria-hidden="true"></span>
-        <span class="brand-text">Morpho<span>Nerva</span></span>
+        <span class="logo-tile">
+          <img src="../assets/images/logo-mark.png" alt="MorphoNerva logo" class="brand-logo">
+        </span>
+        <span class="brand-name">MorphoNerva</span>
       </a>
 
       <nav class="main-nav" id="main-nav">
@@ -23,7 +27,7 @@
         <a href="../technology/index.html">Technology</a>
         <a href="../research/index.html">Research</a>
         <a href="index.html" class="active">Roadmap</a>
-        <a href="../collaborate/index.html">Careers & Collaborate</a>
+        <a href="../collaborate/index.html">Collaborate</a>
         <a href="../contact/index.html">Contact</a>
       </nav>
 
@@ -39,148 +43,91 @@
 
   <main>
     <div class="container">
-      <div class="section-header">
-        <div class="hero-badges">
-          <span class="badge">Milestones</span>
-          <span class="badge neutral">Stage-Level Architecture</span>
-        </div>
-        <h2>System Development Roadmap</h2>
-        <p>A staged, evidence-grounded path from theoretical research to verified digital silicon.</p>
+
+      <div class="page-header">
+        <h1>Roadmap</h1>
+        <p class="lead">
+          Milestones from mathematical foundation and digital simulation to physical hardware.
+        </p>
       </div>
 
-      <!-- Roadmap Flow Diagram -->
-      <section class="roadmap-overview">
-        <div class="figure-container">
-          <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="../assets/images/roadmap-dark.svg">
-            <img src="../assets/images/roadmap-light.svg" alt="MorphoNerva development roadmap: Research (done), Prototype 0 digital core in design and simulation (now/in development), Prototype 1 measured on FPGA, pilots with design partners, and custom silicon">
-          </picture>
-          <div class="figure-caption">
-            Figure 1: MorphoNerva roadmap from mathematical formulation to custom edge silicon. Current stage: Prototype 0 in active development.
-          </div>
+      <!-- Lead Image -->
+      <div class="page-lead-figure">
+        <img src="../assets/images/silicon-wafer-12in.jpg" alt="A 300 mm silicon wafer" class="page-lead-img">
+        <div class="figure-caption">
+          A 300 mm silicon wafer. Custom silicon is where we're headed. Image: Peellden, CC BY-SA 3.0.
+        </div>
+      </div>
+
+      <!-- Five-Step Timeline -->
+      <section class="timeline-container">
+        <div class="section-header">
+          <h2>Engineering milestones</h2>
         </div>
 
-        <div class="grid grid-3" style="margin-top: 2.5rem;">
-          <div class="card">
-            <span class="badge neutral" style="width: fit-content; margin-bottom: 0.75rem;">Stage 1 &bull; Complete</span>
-            <h3>Foundational R&D</h3>
-            <p>
-              Mathematical formulations of event encodings, numerical precision bounds, continuous-to-discrete LIF models, and golden software contract definition.
-            </p>
-            <div class="card-footer">
-              <span>Status: Completed</span>
+        <div class="timeline-steps">
+          <div class="timeline-step">
+            <div>
+              <div class="timeline-step-num">Step 1</div>
+              <h3>Research</h3>
+              <p>Models, methods, and simulation tools.</p>
             </div>
+            <span class="timeline-badge done">Done</span>
           </div>
 
-          <div class="card" style="border-color: var(--brand-primary); box-shadow: var(--shadow-md);">
-            <span class="badge" style="width: fit-content; margin-bottom: 0.75rem;">Stage 2 &bull; Current</span>
-            <h3>Prototype 0 Core</h3>
-            <p>
-              Design, formal verification, and multi-tool simulation of the first digital neuromorphic processing core, aligned bit-for-bit with OmniSim and OmniSDK.
-            </p>
-            <div class="card-footer">
-              <strong>Status: In Development</strong>
+          <div class="timeline-step active">
+            <div>
+              <div class="timeline-step-num">Step 2</div>
+              <h3>Prototype 0</h3>
+              <p>Our first digital core, designed and checked in simulation.</p>
             </div>
+            <span class="timeline-badge current">Now &middot; In development</span>
           </div>
 
-          <div class="card">
-            <span class="badge neutral" style="width: fit-content; margin-bottom: 0.75rem;">Stage 3 &bull; Next</span>
-            <h3>Prototype 1 on FPGA</h3>
-            <p>
-              Hardware synthesis, board bring-up, and physical lab bench power/latency measurements across standardized acoustic and event-vision benchmarks.
-            </p>
-            <div class="card-footer">
-              <span>Status: Planned</span>
+          <div class="timeline-step">
+            <div>
+              <div class="timeline-step-num">Step 3</div>
+              <h3>Prototype 1</h3>
+              <p>The core running on FPGA hardware, with measured results.</p>
             </div>
-          </div>
-        </div>
-
-        <div class="grid grid-2" style="margin-top: 1.5rem;">
-          <div class="card">
-            <span class="badge neutral" style="width: fit-content; margin-bottom: 0.75rem;">Stage 4</span>
-            <h3>Design Partner Pilots</h3>
-            <p>
-              Deploying FPGA evaluation kits and OmniSDK toolchains into pilot partner environments for real-world industrial and scientific edge monitoring trials.
-            </p>
-            <div class="card-footer">
-              <span>Status: Planned</span>
-            </div>
+            <span class="timeline-badge future">Planned</span>
           </div>
 
-          <div class="card">
-            <span class="badge neutral" style="width: fit-content; margin-bottom: 0.75rem;">Stage 5</span>
-            <h3>Custom Edge Silicon</h3>
-            <p>
-              Tapeout and production of specialized event-driven digital application-specific integrated circuits (ASICs) optimized for microwatt to milliwatt edge deployments.
-            </p>
-            <div class="card-footer">
-              <span>Status: Long-Term Goal</span>
+          <div class="timeline-step">
+            <div>
+              <div class="timeline-step-num">Step 4</div>
+              <h3>Pilots</h3>
+              <p>Working with design partners on real sensing problems.</p>
             </div>
+            <span class="timeline-badge future">Planned</span>
+          </div>
+
+          <div class="timeline-step">
+            <div>
+              <div class="timeline-step-num">Step 5</div>
+              <h3>Custom silicon</h3>
+              <p>A dedicated, production-grade neuromorphic chip.</p>
+            </div>
+            <span class="timeline-badge future">Goal</span>
           </div>
         </div>
       </section>
 
-      <!-- Evidence Ladder Section -->
-      <section style="margin-top: 4.5rem;">
-        <div class="section-header">
-          <h2>The Evidence Ladder & Reporting Standards</h2>
-          <p>Why we refuse to publish unmeasured claims, speculative ratios, or subjective superlatives.</p>
-        </div>
-
+      <!-- Timeline Diagram -->
+      <section style="margin: 3.5rem 0;">
         <div class="figure-container">
           <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="../assets/images/evidence-ladder-dark.svg">
-            <img src="../assets/images/evidence-ladder-light.svg" alt="Evidence ladder: Target, Estimated, Measured, Externally Verified, and Sourced. Target and Estimated are never published as numbers; public performance numbers start only at Measured.">
+            <source media="(prefers-color-scheme: dark)" srcset="../assets/images/roadmap-dark.svg">
+            <img src="../assets/images/roadmap-light.svg" alt="Roadmap diagram: research, Prototype 0 simulation, Prototype 1 FPGA, pilots, custom silicon" width="960" height="280">
           </picture>
-          <div class="figure-caption">
-            Figure 2: The MorphoNerva Evidence Ladder. Public performance claims are permitted only from Measured upward.
-          </div>
         </div>
+      </section>
 
-        <div class="callout" style="margin-top: 2rem;">
-          <p>
-            <strong>No Performance Results Are Published Yet.</strong> Because Prototype 0 is currently in digital RTL simulation and formal verification, MorphoNerva deliberately does not publish energy, latency, or throughput figures. Estimates derived from simulation remain internal engineering signals. We publish numbers only once measured on physical silicon with verified power boundaries.
-          </p>
-        </div>
-
-        <div class="table-responsive" style="margin-top: 2rem;">
-          <table>
-            <thead>
-              <tr>
-                <th>Evidence Level</th>
-                <th>Definition & Evidence Requirement</th>
-                <th>Public Disclosure Policy</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Target</strong></td>
-                <td>Qualitative architectural objective or research goal (e.g., lower power for always-on sensing).</td>
-                <td>Stated qualitatively only. <strong>No numbers permitted.</strong></td>
-              </tr>
-              <tr>
-                <td><strong>Estimated</strong></td>
-                <td>Derived from cycle-accurate simulation, formal verification, or synthesis reports.</td>
-                <td>Used internally for engineering trade-offs. <strong>Never published as a performance claim.</strong></td>
-              </tr>
-              <tr>
-                <td><strong>Measured</strong></td>
-                <td>Physically characterized by MorphoNerva on physical hardware with stated workload, clock, and power boundary.</td>
-                <td>Published with full reproduction metadata (commit SHA, workload parameters, test harness).</td>
-              </tr>
-              <tr>
-                <td><strong>Externally Verified</strong></td>
-                <td>Independently replicated by an external customer, research lab, or independent test agency.</td>
-                <td>Published alongside third-party replication report.</td>
-              </tr>
-              <tr>
-                <td><strong>Sourced</strong></td>
-                <td>Peer-reviewed or public result published by an external research team.</td>
-                <td>Cited with complete public DOI or bibliographic reference; never claimed as our own.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <!-- The Results Commitment -->
+      <section class="status-banner" style="margin-top: 3.5rem;">
+        <p>
+          We'll publish performance numbers only after we've measured them on our own hardware. Each one will say what hardware, workload and power setup it came from.
+        </p>
       </section>
 
     </div>
@@ -192,30 +139,29 @@
       <div class="footer-col">
         <h4>MorphoNerva, Inc.</h4>
         <p>
-          Event-driven neuromorphic computing systems for edge intelligence, remote sensing, and scientific instruments.
+          Neuromorphic chips and software for always-on sensing at the edge.
         </p>
         <p style="margin-top: 0.75rem; font-size: 0.82rem; color: var(--text-subtle);">
-          Registered US Small Business (SAM.gov).
+          Registered US small business (SAM.gov).
         </p>
       </div>
 
       <div class="footer-col">
-        <h4>Navigation</h4>
+        <h4>Pages</h4>
         <ul>
           <li><a href="../index.html">Home</a></li>
           <li><a href="../technology/index.html">Technology</a></li>
           <li><a href="../research/index.html">Research</a></li>
           <li><a href="index.html">Roadmap</a></li>
-          <li><a href="../collaborate/index.html">Careers & Collaborate</a></li>
+          <li><a href="../collaborate/index.html">Collaborate</a></li>
           <li><a href="../contact/index.html">Contact</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h4>Open Ecosystem</h4>
+        <h4>Ecosystem</h4>
         <ul>
           <li><a href="https://github.com/MorphoNerva-Inc" target="_blank" rel="noopener">GitHub Organization</a></li>
-          <li><a href="https://github.com/MorphoNerva-Inc/.github" target="_blank" rel="noopener">Organization Profile</a></li>
           <li><a href="https://github.com/neuromorphs/NIR" target="_blank" rel="noopener">NIR Standard</a></li>
           <li><a href="https://open-neuromorphic.org" target="_blank" rel="noopener">Open Neuromorphic</a></li>
         </ul>
@@ -224,9 +170,9 @@
       <div class="footer-col">
         <h4>Standards</h4>
         <ul>
-          <li><a href="https://github.com/MorphoNerva-Inc/morphonerva-inc.github.io/blob/main/SOURCES.md">Image Sources</a></li>
+          <li><a href="../SOURCES.md">Image credits</a></li>
           <li><a href="https://github.com/MorphoNerva-Inc/.github/blob/main/CODE_OF_CONDUCT.md" target="_blank" rel="noopener">Code of Conduct</a></li>
-          <li><a href="https://github.com/MorphoNerva-Inc/.github/blob/main/SECURITY.md" target="_blank" rel="noopener">Security Policy</a></li>
+          <li><a href="https://github.com/MorphoNerva-Inc/.github/blob/main/SECURITY.md" target="_blank" rel="noopener">Security</a></li>
           <li><a href="../collaborate/index.html">Collaboration Form</a></li>
         </ul>
       </div>
@@ -234,10 +180,10 @@
 
     <div class="footer-bottom">
       <div>
-        &copy; 2026 MorphoNerva, Inc. All rights reserved.
+        &copy; 2026 MorphoNerva, Inc.
       </div>
       <div>
-        Evidence Policy: Measured or Sourced numbers only.
+        Diagrams on this site are illustrations, not measurement results. Photographs are used under their licences; see <a href="../SOURCES.md">Image credits</a>.
       </div>
     </div>
   </footer>

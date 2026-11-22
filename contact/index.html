@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | MorphoNerva, Inc.</title>
-  <meta name="description" content="Contact MorphoNerva, Inc. for partnerships, research collaboration, and general inquiries.">
+  <meta name="description" content="Contact MorphoNerva, Inc. for partnerships, research inquiries, and responsible security disclosures.">
   <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22 width=%2232%22 height=%2232%22><circle cx=%2216%22 cy=%2216%22 r=%22%232563eb%22/></svg>">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32.png">
+  <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
 </head>
 <body>
 
@@ -14,8 +16,10 @@
   <header class="site-header">
     <div class="nav-container">
       <a href="../index.html" class="brand-link">
-        <span class="brand-pulse" aria-hidden="true"></span>
-        <span class="brand-text">Morpho<span>Nerva</span></span>
+        <span class="logo-tile">
+          <img src="../assets/images/logo-mark.png" alt="MorphoNerva logo" class="brand-logo">
+        </span>
+        <span class="brand-name">MorphoNerva</span>
       </a>
 
       <nav class="main-nav" id="main-nav">
@@ -23,7 +27,7 @@
         <a href="../technology/index.html">Technology</a>
         <a href="../research/index.html">Research</a>
         <a href="../roadmap/index.html">Roadmap</a>
-        <a href="../collaborate/index.html">Careers & Collaborate</a>
+        <a href="../collaborate/index.html">Collaborate</a>
         <a href="index.html" class="active">Contact</a>
       </nav>
 
@@ -39,59 +43,57 @@
 
   <main>
     <div class="container">
-      <div class="section-header">
-        <div class="hero-badges">
-          <span class="badge">Inquiries</span>
-          <span class="badge neutral">Company Communications</span>
-        </div>
-        <h2>Contact MorphoNerva</h2>
-        <p>Connecting with our team for commercial partnerships, research inquiries, and technical engagement.</p>
+
+      <div class="page-header">
+        <h1>Contact</h1>
+        <p class="lead">
+          Connect with our engineering and research teams.
+        </p>
       </div>
 
-      <div class="grid grid-2" style="margin-top: 2rem;">
-        <div class="card" style="padding: 2.25rem;">
-          <h3>Public Collaboration & Partnership</h3>
-          <p>
-            For prospective pilot partners, academic researchers, and engineering contributors, our primary intake is through our public GitHub collaboration issue template.
-          </p>
-          <p style="margin-top: 1rem;">
-            This channel allows structured communication without requiring disclosure of confidential or proprietary details.
-          </p>
-          <div style="margin-top: 1.75rem;">
-            <a href="https://github.com/MorphoNerva-Inc/.github/issues/new?template=collaboration.yml" target="_blank" rel="noopener" class="btn btn-primary">
-              Open Collaboration Template &rarr;
-            </a>
-          </div>
-        </div>
-
-        <div class="card" style="padding: 2.25rem;">
-          <h3>Corporate Information</h3>
-          <p>
-            <strong>Entity:</strong> MorphoNerva, Inc.<br>
-            <strong>Status:</strong> Registered US Small Business (SAM.gov)<br>
-            <strong>Domain:</strong> Neuromorphic computing systems, edge accelerators, HW/SW co-design<br>
-            <strong>Repository Hub:</strong> <a href="https://github.com/MorphoNerva-Inc" target="_blank" rel="noopener">github.com/MorphoNerva-Inc</a>
-          </p>
-          <div class="callout" style="margin-top: 1.5rem; padding: 1rem 1.25rem;">
-            <p style="font-size: 0.9rem;">
-              <strong>Note on Corporate Email:</strong> Direct company role-based email addresses are being provisioned and will be announced alongside our first hardware milestone release.
-            </p>
-          </div>
+      <!-- Lead Image -->
+      <div class="page-lead-figure">
+        <img src="../assets/images/mars-curiosity-remote-sensing.jpg" alt="Robotic arm and mast of NASA Curiosity rover on Mars" class="page-lead-img">
+        <div class="figure-caption">
+          Instruments far from any power outlet, like NASA's Curiosity rover, are why we care about every milliwatt. Image: NASA/JPL-Caltech, public domain.
         </div>
       </div>
 
-      <!-- Security & Responsible Disclosure -->
-      <section style="margin-top: 4rem;">
+      <!-- Contact Options Grid -->
+      <div class="grid grid-2" style="margin: 3rem 0;">
         <div class="card">
-          <h3>Security & Responsible Disclosure</h3>
+          <h3>General enquiries &amp; collaboration</h3>
           <p>
-            MorphoNerva takes the security and integrity of our open-source tools, repositories, and platform infrastructure seriously. If you identify a potential security vulnerability in any public MorphoNerva repository or release, please consult our security guidelines:
+            Whether you are exploring pilot integration, joint academic research, or technical collaboration, please reach out through our public collaboration form.
           </p>
-          <div style="margin-top: 1rem;">
-            <a href="https://github.com/MorphoNerva-Inc/.github/blob/main/SECURITY.md" target="_blank" rel="noopener" class="btn btn-secondary" style="font-size: 0.9rem;">
-              View Security Policy (SECURITY.md) &rarr;
-            </a>
+          <div style="margin-top: 1.25rem;">
+            <a href="https://github.com/MorphoNerva-Inc/.github/issues/new?template=collaboration.yml" target="_blank" rel="noopener" class="btn btn-primary">Open collaboration form</a>
           </div>
+        </div>
+
+        <div class="card">
+          <h3>Security &amp; vulnerability reporting</h3>
+          <p>
+            We take the integrity of our software and hardware models seriously. Please report vulnerabilities through GitHub's private vulnerability reporting on the affected repository. Please do not open a public issue.
+          </p>
+          <div style="margin-top: 1.25rem;">
+            <a href="https://github.com/MorphoNerva-Inc/.github/blob/main/SECURITY.md" target="_blank" rel="noopener" class="btn btn-secondary">Security policy</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Company Details -->
+      <section style="margin: 3.5rem 0 2rem;">
+        <div class="card" style="background: var(--bg-card-subtle);">
+          <h3>Company details</h3>
+          <p style="margin-top: 0.5rem; line-height: 1.7;">
+            <strong>MorphoNerva, Inc.</strong><br>
+            Registered US small business (SAM.gov)<br>
+            GitHub Organization: <a href="https://github.com/MorphoNerva-Inc" target="_blank" rel="noopener">github.com/MorphoNerva-Inc</a>
+          </p>
+          <p style="margin-top: 0.75rem; font-size: 0.88rem; color: var(--text-subtle);">
+            Direct company email and office phone routing will be published as dedicated communications channels are activated.
+          </p>
         </div>
       </section>
 
@@ -104,30 +106,29 @@
       <div class="footer-col">
         <h4>MorphoNerva, Inc.</h4>
         <p>
-          Event-driven neuromorphic computing systems for edge intelligence, remote sensing, and scientific instruments.
+          Neuromorphic chips and software for always-on sensing at the edge.
         </p>
         <p style="margin-top: 0.75rem; font-size: 0.82rem; color: var(--text-subtle);">
-          Registered US Small Business (SAM.gov).
+          Registered US small business (SAM.gov).
         </p>
       </div>
 
       <div class="footer-col">
-        <h4>Navigation</h4>
+        <h4>Pages</h4>
         <ul>
           <li><a href="../index.html">Home</a></li>
           <li><a href="../technology/index.html">Technology</a></li>
           <li><a href="../research/index.html">Research</a></li>
           <li><a href="../roadmap/index.html">Roadmap</a></li>
-          <li><a href="../collaborate/index.html">Careers & Collaborate</a></li>
+          <li><a href="../collaborate/index.html">Collaborate</a></li>
           <li><a href="index.html">Contact</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h4>Open Ecosystem</h4>
+        <h4>Ecosystem</h4>
         <ul>
           <li><a href="https://github.com/MorphoNerva-Inc" target="_blank" rel="noopener">GitHub Organization</a></li>
-          <li><a href="https://github.com/MorphoNerva-Inc/.github" target="_blank" rel="noopener">Organization Profile</a></li>
           <li><a href="https://github.com/neuromorphs/NIR" target="_blank" rel="noopener">NIR Standard</a></li>
           <li><a href="https://open-neuromorphic.org" target="_blank" rel="noopener">Open Neuromorphic</a></li>
         </ul>
@@ -136,9 +137,9 @@
       <div class="footer-col">
         <h4>Standards</h4>
         <ul>
-          <li><a href="https://github.com/MorphoNerva-Inc/morphonerva-inc.github.io/blob/main/SOURCES.md">Image Sources</a></li>
+          <li><a href="../SOURCES.md">Image credits</a></li>
           <li><a href="https://github.com/MorphoNerva-Inc/.github/blob/main/CODE_OF_CONDUCT.md" target="_blank" rel="noopener">Code of Conduct</a></li>
-          <li><a href="https://github.com/MorphoNerva-Inc/.github/blob/main/SECURITY.md" target="_blank" rel="noopener">Security Policy</a></li>
+          <li><a href="https://github.com/MorphoNerva-Inc/.github/blob/main/SECURITY.md" target="_blank" rel="noopener">Security</a></li>
           <li><a href="../collaborate/index.html">Collaboration Form</a></li>
         </ul>
       </div>
@@ -146,10 +147,10 @@
 
     <div class="footer-bottom">
       <div>
-        &copy; 2026 MorphoNerva, Inc. All rights reserved.
+        &copy; 2026 MorphoNerva, Inc.
       </div>
       <div>
-        Evidence Policy: Measured or Sourced numbers only.
+        Diagrams on this site are illustrations, not measurement results. Photographs are used under their licences; see <a href="../SOURCES.md">Image credits</a>.
       </div>
     </div>
   </footer>
