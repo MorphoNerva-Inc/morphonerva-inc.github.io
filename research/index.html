@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Research & Standards | MorphoNerva, Inc.</title>
-  <meta name="description" content="Research methodology, engineering standards, open questions, and literature foundations for MorphoNerva's neuromorphic systems.">
+  <title>Research | MorphoNerva, Inc.</title>
+  <meta name="description" content="Research foundations, open scientific questions, and engineering standards at MorphoNerva, Inc.">
   <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22 width=%2232%22 height=%2232%22><circle cx=%2216%22 cy=%2216%22 r=%2212%22 fill=%22%232563eb%22/></svg>">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32.png">
+  <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
 </head>
 <body>
 
@@ -14,8 +16,10 @@
   <header class="site-header">
     <div class="nav-container">
       <a href="../index.html" class="brand-link">
-        <span class="brand-pulse" aria-hidden="true"></span>
-        <span class="brand-text">Morpho<span>Nerva</span></span>
+        <span class="logo-tile">
+          <img src="../assets/images/logo-mark.png" alt="MorphoNerva logo" class="brand-logo">
+        </span>
+        <span class="brand-name">MorphoNerva</span>
       </a>
 
       <nav class="main-nav" id="main-nav">
@@ -23,7 +27,7 @@
         <a href="../technology/index.html">Technology</a>
         <a href="index.html" class="active">Research</a>
         <a href="../roadmap/index.html">Roadmap</a>
-        <a href="../collaborate/index.html">Careers & Collaborate</a>
+        <a href="../collaborate/index.html">Collaborate</a>
         <a href="../contact/index.html">Contact</a>
       </nav>
 
@@ -39,150 +43,108 @@
 
   <main>
     <div class="container">
-      <div class="section-header">
-        <div class="hero-badges">
-          <span class="badge">Scientific R&D</span>
-          <span class="badge neutral">Reproducible Methodology</span>
-        </div>
-        <h2>Research & Engineering Standards</h2>
-        <p>Grounding our engineering in pre-registered hypotheses, rigorous baselines, formal proofs, and transparent provenance.</p>
+
+      <div class="page-header">
+        <h1>Research</h1>
+        <p class="lead">
+          Building on decades of open scientific inquiry to make neuromorphic computing practical and verifiable.
+        </p>
       </div>
 
-      <!-- Core Research Questions -->
-      <section class="research-questions">
-        <div class="section-header">
-          <h2>Fundamental Questions We Investigate</h2>
-          <p>Scientific and architectural inquiries guiding our systems design.</p>
+      <!-- Lead Image -->
+      <div class="page-lead-figure">
+        <img src="../assets/images/spinnaker-machine.jpg" alt="The SpiNNaker 1-million-core neuromorphic supercomputer" class="page-lead-img">
+        <div class="figure-caption">
+          SpiNNaker, a million-core neuromorphic computer built for brain research. Not MorphoNerva hardware. Image: Pabogdan, CC BY-SA 4.0.
         </div>
+      </div>
 
-        <div class="grid grid-2">
-          <div class="card">
-            <h3>1. Real-World Sparsity Retention</h3>
-            <p>
-              How much temporal activity sparsity survives when processing uncurated, noisy sensor streams from real physical environments compared to synthetic academic benchmarks? What is the true Pareto trade-off between threshold sparsity and model accuracy?
-            </p>
-          </div>
+      <!-- Intro -->
+      <section style="margin: 2.5rem 0;">
+        <p style="font-size: 1.15rem; line-height: 1.7; color: var(--text-main);">
+          Brain-inspired computing has decades of public research behind it, from Cajal's drawings of neurons to today's large neuromorphic machines. We build on that work and focus on one question: making it practical, and provably correct, for real products.
+        </p>
+      </section>
 
-          <div class="card">
-            <h3>2. Physical Sensory Encodings</h3>
-            <p>
-              Which mathematical transformations best convert continuous physical quantities (audio pressure, vibration acceleration, optical flow) into discrete event representations without discarding critical high-frequency phase and amplitude information?
-            </p>
+      <!-- Two images side by side -->
+      <div class="two-col-images">
+        <div class="image-card">
+          <img src="../assets/images/darpa-synapse-board.jpg" alt="DARPA SyNAPSE 16-chip neuromorphic research board">
+          <div class="image-card-caption">
+            A 16-chip brain-inspired board from DARPA's SyNAPSE programme, 2014. Public domain.
           </div>
+        </div>
+        <div class="image-card">
+          <img src="../assets/images/cajal-purkinje-cell.jpg" alt="Cajal 1899 anatomical drawing of cerebellar Purkinje cells">
+          <div class="image-card-caption">
+            Neurons drawn by Santiago Ramón y Cajal, 1899. Public domain.
+          </div>
+        </div>
+      </div>
 
-          <div class="card">
-            <h3>3. Hardware-Exact Training</h3>
-            <p>
-              How can machine learning optimization algorithms directly account for the exact, low-precision digital arithmetic of digital neuromorphic hardware during surrogate gradient backpropagation, ensuring zero loss of fidelity at deployment?
-            </p>
-          </div>
+      <!-- Questions we're working on -->
+      <section style="margin: 3.5rem 0;">
+        <div class="section-header">
+          <h2>Questions we're working on</h2>
+        </div>
+        <ul class="clean-list">
+          <li>How much of the quiet in real sensor data survives inside a neural network, and what does it cost in accuracy?</li>
+          <li>What's the best way to turn sound, vibration and video into events?</li>
+          <li>How do you train a model for the exact arithmetic of a small, low-power chip?</li>
+          <li>How do you prove a neural chip computes exactly what its simulation says?</li>
+          <li>When does event-driven hardware beat a well-tuned conventional chip, and when doesn't it?</li>
+        </ul>
+      </section>
 
-          <div class="card">
-            <h3>4. End-to-End Equivalence Verification</h3>
-            <p>
-              How can we mathematically and formally prove that a high-level Python model in OmniSim and an RTL implementation on FPGA execute bit-for-bit identical state transitions across multi-million cycle inference workloads?
-            </p>
-          </div>
+      <!-- How we work -->
+      <section style="margin: 3.5rem 0;">
+        <div class="section-header">
+          <h2>How we work</h2>
+        </div>
+        <ul class="clean-list">
+          <li>Experiments are planned before they run.</li>
+          <li>We compare against strong, well-tuned conventional baselines.</li>
+          <li>Hardware is checked against a reference model at every step.</li>
+          <li>We keep negative results.</li>
+          <li>We use only data and code we have the right to use.</li>
+        </ul>
+      </section>
+
+      <!-- Publications and open tools -->
+      <section style="margin: 3.5rem 0;">
+        <div class="section-header">
+          <h2>Publications and open tools</h2>
+        </div>
+        <div class="callout">
+          <p>
+            Nothing published yet. Papers, tools and benchmarks will appear here as they're ready.
+          </p>
         </div>
       </section>
 
-      <!-- Engineering Standards Table -->
-      <section style="margin-top: 4rem;">
+      <!-- Further reading -->
+      <section style="margin: 3.5rem 0 2rem;">
         <div class="section-header">
-          <h2>Engineering & Scientific Standards</h2>
-          <p>The institutional rules governing how all experiments and implementations are conducted.</p>
+          <h2>Further reading</h2>
+          <p>Key external foundational papers and open community hubs in neuromorphic engineering:</p>
         </div>
-
-        <div class="table-responsive">
-          <table>
-            <thead>
-              <tr>
-                <th>Standard</th>
-                <th>Definition & Practice</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Pre-Registered Experiments</strong></td>
-                <td>Every experiment writes down its hypothesis, control arms, at least three fixed random seeds, and an explicit kill criterion before executing. Post-hoc cherry-picking is strictly prohibited.</td>
-              </tr>
-              <tr>
-                <td><strong>Strong, Matched Baselines</strong></td>
-                <td>Neuromorphic models are compared against well-tuned, size-matched conventional deep learning models (e.g. CNNs, Transformers, or DSP filters), never against unoptimized straw men.</td>
-              </tr>
-              <tr>
-                <td><strong>Verification Against Reference Model</strong></td>
-                <td>Every digital RTL block and simulation kernel is continuously compared against a formal golden software model. A numerical mismatch at any step halts release pipelines immediately.</td>
-              </tr>
-              <tr>
-                <td><strong>Preservation of Negative Results</strong></td>
-                <td>Failed hypotheses and architectural dead-ends are formally documented in our research logs with failure analysis, preventing repetitive duplicate work and informing future designs.</td>
-              </tr>
-              <tr>
-                <td><strong>Clean Provenance & Licensing</strong></td>
-                <td>Every line of code, dataset, dependency, and design asset has an auditable provenance trail and confirmed commercial open-source licence.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <!-- Verification Flow Diagram -->
-      <section style="margin-top: 4rem;">
-        <div class="section-header">
-          <h2>Verification Flow: From Model to Silicon</h2>
-          <p>Layered multi-stage verification ensuring hardware correctness before physical bring-up.</p>
-        </div>
-
-        <div class="figure-container">
-          <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="../assets/images/verification-flow-dark.svg">
-            <img src="../assets/images/verification-flow-light.svg" alt="Verification flow diagram: Reference Model, Hardware Design RTL, Multi-Tool Simulation, Gate-Level Netlist Verification, Formal Proofs, FPGA Synthesis, and Board Measurement">
-          </picture>
-          <div class="figure-caption">
-            Figure 1: MorphoNerva verification pipeline. Step-by-step cross-verification against our reference golden model across simulation, formal methods, and physical hardware.
-          </div>
-        </div>
-      </section>
-
-      <!-- Foundational Literature & Open Resources -->
-      <section style="margin-top: 4rem;">
-        <div class="section-header">
-          <h2>Recommended Literature & Open Resources</h2>
-          <p>Peer-reviewed foundations and open-source ecosystems in neuromorphic computing.</p>
-        </div>
-
-        <div class="grid grid-2">
-          <div class="card">
-            <h3>Key Academic Literature</h3>
-            <ul style="margin-left: 1.25rem; font-size: 0.95rem; color: var(--text-muted); line-height: 1.7;">
-              <li>
-                <strong>Gerstner, Kistler, Naud & Paninski:</strong> <a href="https://neuronaldynamics.epfl.ch/online/index.html" target="_blank" rel="noopener"><em>Neuronal Dynamics</em></a> — Rigorous mathematical textbook covering integrate-and-fire and spiking neuron dynamics.
-              </li>
-              <li>
-                <strong>Roy, Jaiswal & Panda (2019):</strong> <a href="https://doi.org/10.1038/s41586-019-1677-2" target="_blank" rel="noopener"><em>Towards spike-based machine intelligence with neuromorphic computing</em></a> (Nature) — Foundational survey of event-driven algorithms and neuromorphic architectures.
-              </li>
-              <li>
-                <strong>Eshraghian et al. (2023):</strong> <a href="https://arxiv.org/abs/2109.12894" target="_blank" rel="noopener"><em>Training Spiking Neural Networks Using Lessons From Deep Learning</em></a> — Practical methods for surrogate gradient training of SNNs.
-              </li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <h3>Community & Open Standards</h3>
-            <ul style="margin-left: 1.25rem; font-size: 0.95rem; color: var(--text-muted); line-height: 1.7;">
-              <li>
-                <strong>Neuromorphic Intermediate Representation (NIR):</strong> <a href="https://github.com/neuromorphs/NIR" target="_blank" rel="noopener">github.com/neuromorphs/NIR</a> — Community standard format for exchanging spiking models across frameworks and hardware targets.
-              </li>
-              <li>
-                <strong>Open Neuromorphic:</strong> <a href="https://open-neuromorphic.org" target="_blank" rel="noopener">open-neuromorphic.org</a> — Open-source community hub dedicated to neuromorphic research, benchmark datasets, and educational tooling.
-              </li>
-              <li>
-                <strong>MorphoNerva Open Source Candidates:</strong> Development tools, NIR converters, and benchmark harnesses planned for public release as validation milestones are met.
-              </li>
-            </ul>
-          </div>
-        </div>
+        <ul style="padding-left: 1.5rem; line-height: 1.8; color: var(--text-main);">
+          <li>
+            <a href="https://neuronaldynamics.epfl.ch/online/index.html" target="_blank" rel="noopener"><strong>Neuronal Dynamics</strong></a> &mdash; Gerstner, Kistler, Naud and Paninski (free online textbook on spiking neuron models)
+          </li>
+          <li>
+            <a href="https://doi.org/10.1038/s41586-019-1677-2" target="_blank" rel="noopener"><strong>Towards spike-based machine intelligence with neuromorphic computing</strong></a> &mdash; Roy, Jaiswal and Panda, <em>Nature</em> (2019)
+          </li>
+          <li>
+            <a href="https://arxiv.org/abs/2109.12894" target="_blank" rel="noopener"><strong>Training Spiking Neural Networks Using Lessons From Deep Learning</strong></a> &mdash; Eshraghian et al. (practical guide on training SNNs)
+          </li>
+          <li>
+            <a href="https://github.com/neuromorphs/NIR" target="_blank" rel="noopener"><strong>NIR (Neuromorphic Intermediate Representation)</strong></a> &mdash; Open standard format for exchanging spiking models
+          </li>
+          <li>
+            <a href="https://open-neuromorphic.org" target="_blank" rel="noopener"><strong>Open Neuromorphic</strong></a> &mdash; Global community hub for open-source neuromorphic tools
+          </li>
+        </ul>
       </section>
 
     </div>
@@ -194,30 +156,29 @@
       <div class="footer-col">
         <h4>MorphoNerva, Inc.</h4>
         <p>
-          Event-driven neuromorphic computing systems for edge intelligence, remote sensing, and scientific instruments.
+          Neuromorphic chips and software for always-on sensing at the edge.
         </p>
         <p style="margin-top: 0.75rem; font-size: 0.82rem; color: var(--text-subtle);">
-          Registered US Small Business (SAM.gov).
+          Registered US small business (SAM.gov).
         </p>
       </div>
 
       <div class="footer-col">
-        <h4>Navigation</h4>
+        <h4>Pages</h4>
         <ul>
           <li><a href="../index.html">Home</a></li>
           <li><a href="../technology/index.html">Technology</a></li>
           <li><a href="index.html">Research</a></li>
           <li><a href="../roadmap/index.html">Roadmap</a></li>
-          <li><a href="../collaborate/index.html">Careers & Collaborate</a></li>
+          <li><a href="../collaborate/index.html">Collaborate</a></li>
           <li><a href="../contact/index.html">Contact</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h4>Open Ecosystem</h4>
+        <h4>Ecosystem</h4>
         <ul>
           <li><a href="https://github.com/MorphoNerva-Inc" target="_blank" rel="noopener">GitHub Organization</a></li>
-          <li><a href="https://github.com/MorphoNerva-Inc/.github" target="_blank" rel="noopener">Organization Profile</a></li>
           <li><a href="https://github.com/neuromorphs/NIR" target="_blank" rel="noopener">NIR Standard</a></li>
           <li><a href="https://open-neuromorphic.org" target="_blank" rel="noopener">Open Neuromorphic</a></li>
         </ul>
@@ -226,9 +187,9 @@
       <div class="footer-col">
         <h4>Standards</h4>
         <ul>
-          <li><a href="https://github.com/MorphoNerva-Inc/morphonerva-inc.github.io/blob/main/SOURCES.md">Image Sources</a></li>
+          <li><a href="../SOURCES.md">Image credits</a></li>
           <li><a href="https://github.com/MorphoNerva-Inc/.github/blob/main/CODE_OF_CONDUCT.md" target="_blank" rel="noopener">Code of Conduct</a></li>
-          <li><a href="https://github.com/MorphoNerva-Inc/.github/blob/main/SECURITY.md" target="_blank" rel="noopener">Security Policy</a></li>
+          <li><a href="https://github.com/MorphoNerva-Inc/.github/blob/main/SECURITY.md" target="_blank" rel="noopener">Security</a></li>
           <li><a href="../collaborate/index.html">Collaboration Form</a></li>
         </ul>
       </div>
@@ -236,10 +197,10 @@
 
     <div class="footer-bottom">
       <div>
-        &copy; 2026 MorphoNerva, Inc. All rights reserved.
+        &copy; 2026 MorphoNerva, Inc.
       </div>
       <div>
-        Evidence Policy: Measured or Sourced numbers only.
+        Diagrams on this site are illustrations, not measurement results. Photographs are used under their licences; see <a href="../SOURCES.md">Image credits</a>.
       </div>
     </div>
   </footer>
