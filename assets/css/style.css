@@ -253,7 +253,7 @@ nav.main-nav a.active {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: right center;
   display: block;
 }
 
@@ -264,7 +264,7 @@ nav.main-nav a.active {
     135deg,
     rgba(11, 16, 32, 0.94) 0%,
     rgba(11, 16, 32, 0.82) 48%,
-    rgba(11, 16, 32, 0.50) 100%
+    rgba(11, 16, 32, 0.12) 100%
   );
 }
 
@@ -916,6 +916,12 @@ footer.site-footer {
   }
   .two-col-images {
     grid-template-columns: 1fr;
+  }
+  .page-lead-img {
+    aspect-ratio: 16 / 9;
+  }
+  .hero-bg-img {
+    object-position: 70% center;
   }
   .footer-container {
     grid-template-columns: 1fr;
