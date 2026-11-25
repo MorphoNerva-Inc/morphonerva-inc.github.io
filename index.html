@@ -136,6 +136,136 @@
         </div>
       </section>
 
+      <!-- The Problem -->
+      <section style="margin-top: 4rem;">
+        <div class="section-header">
+          <h2>The problem: power, heat and memory</h2>
+          <p>Always-on intelligence is limited by physics, not by transistor counts.</p>
+        </div>
+        <p style="font-size: 1.1rem; line-height: 1.7; color: var(--text-main); margin-bottom: 1.25rem;">
+          Remote sensors, wearables, industrial monitors and scientific instruments must watch the world continuously, often on batteries or solar power and under strict thermal limits. Most of what they see is uneventful: quiet rooms, healthy machines, empty skies.
+        </p>
+        <p style="font-size: 1.1rem; line-height: 1.7; color: var(--text-main); margin-bottom: 1.25rem;">
+          Conventional processors still execute dense operations on every clock tick through all of that quiet, moving redundant data through memory and dissipating heat the whole time. Doing the same work faster does not help a device whose budget is measured in milliwatts. Doing less work is the next lever.
+        </p>
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>Power</h3>
+            <p>Continuous sampling and processing drain batteries on remote and wearable devices long before anything interesting happens.</p>
+          </div>
+          <div class="card">
+            <h3>Heat and memory</h3>
+            <p>High frame and sample rates flood memory bandwidth and add latency and heat exactly where cooling is hardest: at the sensor.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Approach -->
+      <section style="margin-top: 4rem;">
+        <div class="section-header">
+          <h2>Our approach: compute only on change</h2>
+        </div>
+        <p style="font-size: 1.1rem; line-height: 1.7; color: var(--text-main); margin-bottom: 1.25rem;">
+          We build event-driven digital neuromorphic systems: processors that do work only when their inputs change, inspired by how neurons stay quiet until their inputs integrate to threshold and then fire a brief spike. Sensors such as event cameras, microphones and vibration pickups already report the world this way, as sparse streams of events.
+        </p>
+        <p style="font-size: 1.1rem; line-height: 1.7; color: var(--text-main);">
+          We co-design the complete stack &mdash; spiking neural network models, simulation toolchains and digital hardware architectures &mdash; so a model checked in simulation is exactly what the chip computes. <a href="technology/index.html">How it works</a>
+        </p>
+      </section>
+
+      <!-- What Prototype 0 Is -->
+      <section style="margin-top: 4rem;">
+        <div class="section-header">
+          <h2>What Prototype 0 is</h2>
+          <p>Our first digital core, now in design and simulation.</p>
+        </div>
+        <p style="font-size: 1.1rem; line-height: 1.7; color: var(--text-main); margin-bottom: 1.25rem;">
+          Prototype 0 is the first MorphoNerva digital neuromorphic core: an event-driven neural processing core for always-on edge sensing. It is being designed and checked in simulation now, with formal property proofs before FPGA synthesis. Prototyping on FPGAs comes first; custom silicon is the goal.
+        </p>
+        <ol class="numbered-steps">
+          <li>Research: models, methods and simulation tools. <strong>Done.</strong></li>
+          <li>Prototype 0: our first digital core, designed and checked in simulation. <strong>Now, in development.</strong></li>
+          <li>Prototype 1: the core running on FPGA hardware, with measured results. <strong>Planned.</strong></li>
+        </ol>
+        <p style="margin-top: 1rem;"><a href="roadmap/index.html" class="btn btn-secondary">Full roadmap</a></p>
+      </section>
+
+      <!-- Software Stack -->
+      <section style="margin-top: 4rem;">
+        <div class="section-header">
+          <h2>The software stack</h2>
+          <p>From a laptop model to the chip, with no surprises.</p>
+        </div>
+        <div class="grid grid-3">
+          <div class="card">
+            <h3>OmniSim</h3>
+            <p>Simulation and numerical verification for spiking models: see exactly what the chip will compute before any hardware exists.</p>
+          </div>
+          <div class="card">
+            <h3>OmniSDK</h3>
+            <p>Compiler and deployment toolkit that brings a model from common tools through the open <a href="https://github.com/neuromorphs/NIR" target="_blank" rel="noopener">NIR standard</a> to our hardware.</p>
+          </div>
+          <div class="card">
+            <h3>Open standards</h3>
+            <p>We build on open community work: the <a href="https://github.com/neuromorphs/NIR" target="_blank" rel="noopener">NIR model standard</a> and the <a href="https://open-neuromorphic.org" target="_blank" rel="noopener">Open Neuromorphic</a> community.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Progress, with evidence labels -->
+      <section style="margin-top: 4rem;">
+        <div class="section-header">
+          <h2>Progress, with evidence labels</h2>
+          <p>We publish only <strong>Measured</strong> or <strong>Sourced</strong> numbers. Target and Estimated figures are never presented as results.</p>
+        </div>
+        <div class="figure-container">
+          <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="assets/images/evidence-ladder-dark.svg">
+            <img src="assets/images/evidence-ladder-light.svg" alt="Evidence ladder: Target, Estimated, Measured, Externally verified, Sourced" width="960" height="280">
+          </picture>
+          <div class="figure-caption">
+            MorphoNerva illustration: our evidence ladder. Public performance numbers start only at Measured.
+          </div>
+        </div>
+        <div class="callout">
+          <p>
+            <strong>No performance numbers are published yet.</strong> The first results will appear here once they are measured on our own hardware, each with its hardware, workload and power setup. Simulation is an internal verification signal, not a result.
+          </p>
+        </div>
+      </section>
+
+      <!-- Team and Partners -->
+      <section style="margin-top: 4rem;">
+        <div class="section-header">
+          <h2>Team and partners</h2>
+          <p>A small engineering team building a collaborative network across industry and academia.</p>
+        </div>
+        <div class="grid grid-3">
+          <div class="card">
+            <h3>Pilot partners</h3>
+            <p>Teams with edge sensing workloads constrained by power, heat or latency. <a href="collaborate/index.html">Work with us</a></p>
+          </div>
+          <div class="card">
+            <h3>Research collaborators</h3>
+            <p>Researchers in spiking networks, event vision and formal digital verification. <a href="research/index.html">Research</a></p>
+          </div>
+          <div class="card">
+            <h3>Engineers and students</h3>
+            <p>Contributors in digital design, verification, compilers and FPGA bring-up. <a href="collaborate/index.html">Collaborate</a></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Us -->
+      <section style="margin-top: 4rem;">
+        <div class="section-header">
+          <h2>About us</h2>
+        </div>
+        <p style="font-size: 1.1rem; line-height: 1.7; color: var(--text-main);">
+          <strong>MorphoNerva, Inc.</strong> is an engineering R&amp;D company building event-driven digital neuromorphic systems for edge, remote sensing and scientific workloads. We are a registered US small business (SAM.gov). Our mission is to make always-on intelligence practical where power, heat and latency are the physical limits: put computation directly next to the sensor, and spend energy only when the physical world changes.
+        </p>
+      </section>
+
       <!-- Status Band -->
       <section class="status-banner">
         <p>
@@ -197,7 +327,7 @@
         &copy; 2026 MorphoNerva, Inc.
       </div>
       <div>
-        Diagrams on this site are illustrations, not measurement results. Photographs are used under their licences; see <a href="SOURCES.md">Image credits</a>. None show MorphoNerva hardware.
+        <a href="SOURCES.md">Image credits</a>
       </div>
     </div>
   </footer>

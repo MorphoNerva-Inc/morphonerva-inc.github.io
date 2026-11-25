@@ -30,3 +30,5 @@ We use photographs and figures from other people and organizations under their l
 ## Our own figures and logo
 
 The diagrams and illustrations on this site (`*.svg`) are MorphoNerva's own work. They are based on textbook models and made-up example data. **They are not measurement results.** The MorphoNerva logo (`org-logo.png`, `logo-mark.png`, favicons) belongs to MorphoNerva, Inc. and is not covered by the licences above.
+
+> Diagrams on this site are illustrations, not measurement results. Photographs are used under their licences as listed above. None show MorphoNerva hardware.
