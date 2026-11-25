@@ -54,9 +54,9 @@
 
       <!-- Lead Image -->
       <div class="page-lead-figure">
-        <img src="../assets/images/cortical-neuron-microscopy.jpg" alt="Two-photon microscopy of a cortical neuron" class="page-lead-img">
+        <img src="../assets/images/neuron-network-gfp.jpg" alt="Fluorescence micrograph of cultured neurons expressing green fluorescent protein, with their connecting fibres" class="page-lead-img">
         <div class="figure-caption">
-          A cortical neuron in vivo. Neurons stay quiet until their inputs integrate to threshold, then fire a brief spike.
+          A network of living neurons, labelled with a green fluorescent protein. Neurons stay quiet until their inputs integrate to threshold, then fire a brief spike.
         </div>
       </div>
 
@@ -76,9 +76,9 @@
           <h2>Sensors can work the same way</h2>
         </div>
         <div class="page-lead-figure" style="margin: 1.5rem 0 1.75rem;">
-          <img src="../assets/images/event-camera-comparison.jpg" alt="Event-camera comparison: conventional video frames vs sparse event stream" class="page-lead-img">
+          <img src="../assets/images/event-camera-kit.jpg" alt="A commercial event-camera evaluation kit on a small tripod" class="page-lead-img">
           <div class="figure-caption">
-            Same scene: conventional frame camera (top) versus asynchronous event-based sensor (bottom).
+            An event camera. Each pixel reports a change in brightness the moment it happens, instead of sending whole frames on a clock.
           </div>
         </div>
         <p style="font-size: 1.1rem; line-height: 1.7; color: var(--text-main);">
@@ -91,10 +91,13 @@
         <div class="section-header">
           <h2>Why now</h2>
         </div>
-        <div class="page-lead-figure" style="margin: 1.5rem 0 1.75rem;">
-          <img src="../assets/images/moores-law-owid.jpg" alt="Historical microprocessor transistor counts demonstrating Moore's Law" class="page-lead-img">
+        <div class="figure-container" style="margin: 1.5rem 0 1.75rem;">
+          <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="../assets/images/activity-scaling-dark.svg">
+            <img src="../assets/images/activity-scaling-light.svg" alt="Illustration: energy per inference stays flat for event-driven processing as activity varies, while always-on processing scales with time" width="960" height="320">
+          </picture>
           <div class="figure-caption">
-            Microprocessor transistor counts over five decades of semiconductor scaling.
+            MorphoNerva illustration with synthetic example data (not measurement results): always-on processors pay for every clock tick, while event-driven processors pay only for activity.
           </div>
         </div>
         <p style="font-size: 1.1rem; line-height: 1.7; color: var(--text-main);">
@@ -182,7 +185,7 @@
         &copy; 2026 MorphoNerva, Inc.
       </div>
       <div>
-        Diagrams on this site are illustrations, not measurement results. Photographs are used under their licences; see <a href="../SOURCES.md">Image credits</a>. None show MorphoNerva hardware.
+        <a href="../SOURCES.md">Image credits</a>
       </div>
     </div>
   </footer>
